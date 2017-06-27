@@ -4,6 +4,12 @@ const uiActions = {
       type: TOGGLE_DRAWER,
       value
     });
+  },
+  setViewportSize: value => {
+    store.dispatch({
+      type: SET_VIEWPORT_SIZE,
+      value
+    });
   }
 };
 

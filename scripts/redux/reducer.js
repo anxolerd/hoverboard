@@ -4,6 +4,10 @@ const uiReducer = (state = initialState.ui, action) => {
       return Object.assign({}, state, {
         isDrawerOpened: action.value || !state.isDrawerOpened
       });
+    case SET_VIEWPORT_SIZE:
+      return Object.assign({}, state, {
+        viewport: Object.assign({}, state.viewport, action.value)
+      });
     default:
       return state;
   }

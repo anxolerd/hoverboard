@@ -10,7 +10,12 @@
 
   const initialState = {
     ui: {
-      isDrawerOpened: false
+      isDrawerOpened: false,
+      viewport: {
+        isPhone: true,
+        isTablet: false,
+        isDesktop: false
+      }
     },
     route: 'home',
     hero: null,
